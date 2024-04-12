@@ -1,3 +1,128 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Dana';
+    src: url(/public/fonts/Dana/woff2/DanaFaNum-Medium.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DanaBold';
+    src: url(/public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DanaRegular';
+    src: url(/public/fonts/Dana/woff2/DanaFaNum-Regular.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MorabbaLight';
+    src: url(/public/fonts/Morabba/woff2/Morabba-Light.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Morabba';
+    src: url(/public/fonts/Morabba/woff2/Morabba-Medium.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MorabbaBold';
+    src: url(/public/fonts/Morabba/woff2/Morabba-Bold.woff2) format('woff2');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+      url(/public/fonts/Inter/Inter-Regular.ttf) format('truetype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter ExtraBold';
+    src: url(/public/fonts/Inter/Inter-ExtraBold.ttf) format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url(/public/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins Medium';
+    src: url(/public/fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins Bold';
+    src: url(/public/fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins Black';
+    src: url(/public/fonts/Poppins/Poppins-Black.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins Light';
+    src: url(/public/fonts/Poppins/Poppins-Light.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins SemiBold';
+    src: url(/public/fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins Thin';
+    src: url(/public/fonts/Poppins/Poppins-Thin.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Hilda';
+    src: url(/public/fonts/Hilda/Hilda.ttf) format('truetype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Maneli';
+    src: url(/public/fonts/Maneli/Maneli.ttf) format('truetype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aviny';
+    src: url(/public/fonts/Aviny/avinyweb.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IRANSans';
+    src: url(/public/fonts/IRANSans/IRANSansWeb.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IRANSansBlack';
+    src: url(/public/fonts/IRANSans/IRANSansWebBlack.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IRANSansBold';
+    src: url(/public/fonts/IRANSans/IRANSansWebBold.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IRANSansLight';
+    src: url(/public/fonts/IRANSans/IRANSansWebLight.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IRANSansMedium';
+    src: url(/public/fonts/IRANSans/IRANSansWebMedium.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IRANSansUltraLight';
+    src: url(/public/fonts/IRANSans/IRANSansWebUltraLight.woff2) format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Pelak';
+    src: url(/public/fonts/Pelak/PelakFA-Medium.woff2) format('woff2');
+    font-display: swap;
+  }
+}

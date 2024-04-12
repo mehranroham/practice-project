@@ -1,4 +1,5 @@
 import Button from './Button';
+import Tasks from './Tasks';
 
 export default function SelectedProject({ projectsState, setProjectsState }) {
   const selected = projectsState.projects.find((project) => {
@@ -14,22 +15,33 @@ export default function SelectedProject({ projectsState, setProjectsState }) {
   const deleteHandler = () => {
     setProjectsState((prev) => {
       const newProjects = prev.projects.filter((item) => {
-        return projectsState.selectedProject != item.id;
+        return prev.selectedProject != item.id;
       });
       return { selectedProject: undefined, projects: newProjects };
     });
   };
 
   return (
-    <div className='flex justify-center items-center col-span-3'>
-      <header className='w-[30rem] flex flex-col gap-10 justify-center items-center mx-auto border-2 rounded-md p-8'>
+    <div className='flex flex-col pt-20 items-center col-span-3'>
+      <header className='w-[30rem] flex flex-col gap-5 justify-center items-center mx-auto border-b-2 p-8'>
         <div className='flex justify-between w-full items-center'>
           <h1 className='text-2xl'>{selected.title}</h1>
-          <Button onClick={deleteHandler}>حذف</Button>
+          <Button
+            className='w-14 bg-stone-600 text-stone-200 hover:bg-stone-700 hover:text-stone-400'
+            onClick={deleteHandler}
+          >
+            حذف
+          </Button>
         </div>
-        <p>{selected.description}</p>
-        <p>{formattedDate}</p>
+        <p className='flex w-full text-sm text-stone-600'>{formattedDate}</p>
+        <p className='pt-7 whitespace-pre-wrap w-full px-10'>
+          {selected.description}
+        </p>
       </header>
+      <Tasks
+        projectsState={projectsState}
+        setProjectsState={setProjectsState}
+      />
     </div>
   );
 }
